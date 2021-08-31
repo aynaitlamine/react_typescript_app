@@ -19,16 +19,6 @@ function App() {
   const [search, SetSearch] = useState<string>("");
   const [query, SetQuery] = useState<string>("chiken");
   useEffect(() => {
-    /* const getRecipes = async (): Promise<any> => {
-      const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${process.env.REACT_APP_API_ID}&app_key=${process.env.REACT_APP_API_KEY}`);
-      const data = await response.json();
-      SetRecipes(data.hits);
-    } 
-
-    getRecipes();ZZ
-    
-    */
-
     setTimeout(async (): Promise<any> => {
       const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${process.env.REACT_APP_API_ID}&app_key=${process.env.REACT_APP_API_KEY}`);
       const data = await response.json();
